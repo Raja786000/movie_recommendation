@@ -6,10 +6,10 @@ A content-based movie recommender built with Streamlit and TMDB metadata. The ap
 
 1. Create and activate a Python environment.
 2. Install dependencies with `python -m pip install -r requirements.txt`.
-3. Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and add a TMDB API key.
+3. Add your TMDB API key to the ignored `.env` file as `TMDB_API_KEY=your-key`.
 4. Start the app with `streamlit run app.py`.
 
-The app still shows recommendations if no TMDB key is configured, but posters will be unavailable. You can also set `TMDB_API_KEY` as an environment variable.
+The app still shows recommendations if no TMDB key is configured, but posters will be unavailable. You can also configure `TMDB_API_KEY` as an environment variable or in `.streamlit/secrets.toml`.
 
 ## Deploy on Streamlit Community Cloud
 
